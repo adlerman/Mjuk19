@@ -3,5 +3,7 @@ public class NewProject {
     Player p1 = new Player("Göran");
     Player p2 = new Player("Alma");
 
+    System.out.println(p1.name);
+
   }
 }
