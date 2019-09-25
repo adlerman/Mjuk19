@@ -4,6 +4,8 @@ public class NewProject {
     Player p2 = new Player("Alma");
 
     System.out.println(p1.name);
+    System.out.println(p2.name);
+
 
   }
 }
