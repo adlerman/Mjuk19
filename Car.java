@@ -1,8 +1,8 @@
 public class Car {
-  String model;
-  int year;
-  boolean washed;
-  boolean insured;
+  public String model;
+  public int year;
+  public boolean washed;
+  public boolean insured;
 
   public Car(String m, int y, boolean w, boolean i) {
     model = m;

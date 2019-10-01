@@ -5,6 +5,8 @@ public class CarWashTest {
     CarWash cw1 = new CarWash();
     cw1.wash(c2);
     cw1.wash(c2);
+
+    System.out.println(cw1.timesUsed);
     }
 
 }

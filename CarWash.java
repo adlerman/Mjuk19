@@ -1,4 +1,5 @@
 public class CarWash {
+  public int timesUsed = 0;
   public void wash(Car c) {
     if(!c.insured) {
       System.out.println("This car is not insured, we won't touch it!");
@@ -8,6 +9,11 @@ public class CarWash {
       c.washed = true;
       System.out.println("Your car has now been successfully washed. Congratulations.");
     }
+    incrementTimesUsed();
 
+  }
+
+  private void incrementTimesUsed() {
+    timesUsed++;
   }
 }
