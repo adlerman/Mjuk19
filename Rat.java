@@ -1,11 +1,9 @@
-public class Rat implements Mortal {
-  private int health = 10;
-
-  public int getHealth() {
-    return health;
+public class Rat extends Mortal {
+  public Rat(int health) {
+    super(health);
   }
 
-  public void damage(int dmg){
-    health -= dmg;
+  public void screamForHelp() {
+    System.out.println("Squeeeek!");
   }
 }
