@@ -1,28 +1,27 @@
 public class Person {
-  public String firstName;
+  private String firstName;
   private String lastName;
   private int age;
   private boolean hungry;
 
-  public Person() {
-
-  }
-
-  public Person(String fName) {
-    firstName = fName;
+  public Person(String firstName) {
+    this.firstName = firstName;
   }
 
   public Person(int a) {
     age = a;
   }
 
-  public Person(String fName, int a) {
+  public Person(String fName,String lName, int a, boolean h) {
     firstName = fName;
+    lastName = lName;
     age = a;
+    hungry = h;
+
   }
 
   public String getFirstName() {
-    return firstName;
+    return this.firstName;
   }
 
   public void setFirstName(String n) {
@@ -31,5 +30,9 @@ public class Person {
   }else {
     System.out.println("Not allowed first name.");
   }
+  }
+
+  public String toString() {
+    return firstName +" "+ lastName +" "+ age +" "+ hungry;
   }
 }
